@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Thunder";
+    src: url("Thunder-BlackLC.otf");
+   }
+    
+    
+    html {
+        font-family: "Vercetti";
+        src: url("Vercetti-Regular.otf");
+        overflow-x : hidden; 
+    }
+
+    body {
+        margin: 0;
+        background-color: #E0E0E0
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #E0E0E0;
+    }
+
+    header img {
+        border-radius: 50%;
+    }
+    
+
+    header p a {
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        color: initial;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    header p a:hover {
+        box-shadow:
+            7px 7px 20px 0px #0002,
+            4px 4px 5px 0px #0001;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: justify;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .exp span {
+        font-weight: bold;
+    }
+
+    .exp li {
+        margin: 10px;
+    }
+
+    .photos {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .defil {
+        width: 100%;
+        margin: 0;
+        padding-top: 21px;
+        background-color: black;
+    }
+
+    .defil h3 {
+        margin: 0;
+        white-space: nowrap; /* pas de passage à la ligne */
+        animation: defilement-rtl 10s infinite linear;
+        font-family: "Thunder";
+        font-size: 150px;
+        color: white;
+    }
+
+    @keyframes defilement-rtl {
+        0% {
+            transform: translate3d(0, 0, 0);
+            /* position initiale à droite */
+        }
+
+        100% {
+            transform: translate3d(-100%, 0, 0);
+            /* position finale à gauche */
+        }
+    }
+
+    .pics {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E0E0E0;
+    }
